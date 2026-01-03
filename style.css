@@ -160,6 +160,14 @@ a.cta:visited {
   background-color: var(--wood);
 }
 
+.section-icon {
+  width: 56px;              /* plus gros */
+  height: auto;
+  margin-bottom: 24px;      /* espace avant la ligne verte */
+  opacity: 0.9;
+}
+
+
 /* =====================
    GRID
 ===================== */
@@ -185,15 +193,16 @@ a.cta:visited {
   margin-bottom: 18px;
 }
 
-.card::before {
+.card h3::before {
   content: "";
   display: block;
   width: 40px;
   height: 4px;
   background-color: var(--green);
-  margin-bottom: 20px;
+  margin: 16px auto 20px;  /* centré, bien espacé */
   border-radius: 2px;
 }
+
 
 /* =====================
    MOBILE
