@@ -57,7 +57,9 @@ body {
 }
 
 .logo {
-  max-width: 500px;
+  width: 100%;
+  max-width: 520px; /* ← augmente ici */
+  height: auto;
   margin: 0 auto 40px;
   display: block;
 }
