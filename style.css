@@ -59,9 +59,11 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 80px;
   font-weight: 500;
   text-align: center;
+
+  margin-top: 40px;     /* espace AVANT le titre */
+  margin-bottom: 32px;  /* espace APRÈS le titre */
 }
 
 /* TEXTE */
@@ -106,10 +108,10 @@ a.cta:visited {
 
 
 
-/* SECTIONS */
 .section {
-  padding: 140px 0;
+  padding: 120px 0 100px;
 }
+
 
 .section.light {
   background-color: var(--soft-gray);
