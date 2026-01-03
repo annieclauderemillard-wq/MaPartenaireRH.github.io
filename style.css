@@ -1,21 +1,27 @@
-/* RESET */
+/* =====================
+   RESET
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
+/* =====================
+   VARIABLES
+===================== */
 :root {
   --black: #111111;
-  --white: #FFFFFF;
-  --pink: #FFCCCC;
-  --green: #C9D8C5;
-  --wood: #F4EFEA;
-  --soft-gray: #FAFAFA;
+  --white: #ffffff;
+  --pink: #ffcccc;
+  --green: #c9d8c5;
+  --wood: #f4efea;
+  --soft-gray: #fafafa;
 }
 
-/* BASE */
+/* =====================
+   BASE
+===================== */
 body {
   font-family: "Century Gothic", Arial, sans-serif;
   background-color: var(--white);
@@ -23,50 +29,55 @@ body {
   line-height: 1.7;
 }
 
-/* CONTAINER */
+/* =====================
+   CONTAINER
+===================== */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
-/* HERO */
+/* =====================
+   HERO
+===================== */
 .hero {
-  text-align: center;
   min-height: 100vh;
-  padding: 100px 0;
-  background: linear-gradient(
-    to bottom,
-    var(--white),
-    var(--wood)
-  );
+  background: linear-gradient(to bottom, var(--white), var(--wood));
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
-  max-width: 300px;
-  margin-bottom: 50px;
+  max-width: 260px;
+  margin: 0 auto 40px;
 }
 
-/* TITRES */
+/* =====================
+   TITRES
+===================== */
 h1 {
   display: inline-block;
-  font-size: 2.6rem;
-  margin-bottom: 80px;
-  font-weight: 500;
   background-color: var(--pink);
-  padding: 12px 24px;
+  padding: 12px 26px;
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-h2 {
+.section h2 {
+  display: inline-block;
+  background-color: var(--pink);
+  padding: 10px 22px;
   font-size: 2rem;
   font-weight: 500;
-  text-align: center;
-
-  margin-top: 40px;     /* espace AVANT le titre */
-  margin-bottom: 32px;  /* espace APRÈS le titre */
+  margin-bottom: 40px;
 }
 
-/* TEXTE */
+/* =====================
+   TEXTE
+===================== */
 .tagline {
   max-width: 720px;
   margin: 0 auto 45px;
@@ -74,17 +85,27 @@ h2 {
   opacity: 0.9;
 }
 
-/* BUTTON */
+.center {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* =====================
+   BUTTON (CTA)
+===================== */
 a.cta,
 a.cta:visited {
-  color: var(--black);
   text-decoration: none;
+  color: var(--black);
 }
 
 .cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-top: 24px;
 
   padding: 16px 40px;
   border-radius: 999px;
@@ -92,9 +113,7 @@ a.cta:visited {
   background-color: var(--pink);
   border: 2px solid var(--pink);
 
-  color: var(--black);
   font-weight: 600;
-  text-decoration: none;
   cursor: pointer;
 
   transition: all 0.25s ease;
@@ -103,15 +122,15 @@ a.cta:visited {
 .cta:hover {
   background-color: transparent;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-
-
+/* =====================
+   SECTIONS
+===================== */
 .section {
-  padding: 120px 0 100px;
+  padding: 110px 0;
 }
-
 
 .section.light {
   background-color: var(--soft-gray);
@@ -121,25 +140,29 @@ a.cta:visited {
   background-color: var(--wood);
 }
 
-/* GRID */
+/* =====================
+   GRID
+===================== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
+  margin-top: 40px;
 }
 
-/* CARDS */
+/* =====================
+   CARDS
+===================== */
 .card {
   background-color: var(--white);
   padding: 40px;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
 .card h3 {
-  margin-bottom: 24px;
   font-size: 1.1rem;
-  color: var(--black);
+  margin-bottom: 18px;
 }
 
 .card::before {
@@ -152,16 +175,10 @@ a.cta:visited {
   border-radius: 2px;
 }
 
-/* TEXT HELPERS */
-.center {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-  opacity: 0.9;
-}
-
+/* =====================
+   MOBILE
+===================== */
 @media (max-width: 768px) {
-
   .container {
     padding: 0 20px;
   }
@@ -171,11 +188,15 @@ a.cta:visited {
     padding: 10px 18px;
   }
 
-  .tagline {
-    font-size: 1rem;
+  .section h2 {
+    font-size: 1.6rem;
   }
 
   .section {
-    padding: 100px 0;
+    padding: 90px 0;
+  }
+
+  .tagline {
+    font-size: 1rem;
   }
 }
