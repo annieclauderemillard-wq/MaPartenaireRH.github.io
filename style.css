@@ -65,6 +65,8 @@ body {
 /* =====================
    TITRES
 ===================== */
+
+/* Titre principal (MaPartenaireRH) */
 h1 {
   display: inline-block;
   background-color: var(--black);
@@ -75,11 +77,14 @@ h1 {
   font-weight: 500;
 
   margin-bottom: 30px;
+  text-align: center;
 }
+
+/* Titres de sections */
 .section h2 {
-  display: inline-block;
-background-color: var(--none);
-  color: var(--black);   
+  display: block;            /* ⬅ pour bien centrer */
+  background: none;          /* ⬅ enlève tout fond */
+  color: var(--black);       /* ⬅ texte noir */
 
   font-size: 2rem;
   font-weight: 500;
@@ -87,6 +92,7 @@ background-color: var(--none);
 
   margin-bottom: 40px;
 }
+
 
 
 /* =====================
