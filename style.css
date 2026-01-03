@@ -57,7 +57,7 @@ body {
 }
 
 .logo {
-  max-width: 260px;
+  max-width: 380px;
   margin: 0 auto 40px;
   display: block;
 }
@@ -67,8 +67,8 @@ body {
 ===================== */
 h1 {
   display: inline-block;
-  background-color: var(--pink);
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 
   padding: 12px 26px;
   font-size: 2.6rem;
@@ -77,9 +77,9 @@ h1 {
   margin-bottom: 30px;
 }
 .section h2 {
-  display: block;
-  background: none;           /* ⬅ enlève le rose */
-  color: var(--black);        /* ⬅ texte noir */
+  display: inline-block;
+background-color: var(--none);
+  color: var(--black);   
 
   font-size: 2rem;
   font-weight: 500;
