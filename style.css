@@ -59,8 +59,14 @@ body {
 .logo {
   max-width: 220px;
   margin: 0 auto 30px;
-  padding: 18px;
+  padding: 20px;
+
+  background-color: var(--white);
   border: 2px solid var(--black);
+  border-radius: 6px; /* léger adoucissement */
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+
   display: block;
 }
 
